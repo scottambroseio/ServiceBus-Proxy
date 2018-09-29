@@ -2,7 +2,3 @@ steps:
 - name: 'gcr.io/cloud-builders/dotnet'
   args: ['build']
   id: build
-- name: 'gcr.io/cloud-builders/dotnet'
-  args: ['test']
-  id: test
-  waitFor: ['build']
